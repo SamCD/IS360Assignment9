@@ -1,0 +1,26 @@
+require(XML)
+theURL <- "http://www.jaredlander.com/2012/02/another-kind-of-super-bowl-pool/"
+bowlPool <- readHTMLTable(theURL, which = 1, header = FALSE, stringsAsFactors = FALSE)
+bowlPool
+
+class(bowlPool)
+#1. Data Frame
+
+theURL <- "http://www.w3schools.com/html/html_tables.asp"
+hvalues <- readHTMLTable(theURL)
+class(hvalues)
+#2. List
+
+length(hvalues)
+#3. 7
+
+#4. table <- hvalues[1]
+
+#5.
+
+#6. scores <- readHTMLTable("http://scores.espn.go.com/nba/scoreboard")
+
+length(scores)
+#7. 6
+
+#8. Chrome: "View" -> "Developer" -> "Page Source"
